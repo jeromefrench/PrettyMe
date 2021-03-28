@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest --verbose",
-    "dev": "nodemon server.js",
+    "dev": "node server.js",
     "cypress": "cypress open"
   },
   "author": "jchardin",
