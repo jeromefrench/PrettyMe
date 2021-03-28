@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1616752184213" clover="3.2.0">
+  <project timestamp="1616752184213" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1" elements="23" coveredelements="23" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
+    <file name="convertToRoman.js" path="/Users/jeromechardin/testPretyMe/src/convertToRoman.js">
+      <metrics statements="17" coveredstatements="17" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="9" type="stmt"/>
+      <line num="3" count="9" type="cond" truecount="5" falsecount="0"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="7" count="5" type="stmt"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
+      <line num="10" count="5" type="stmt"/>
+      <line num="11" count="42" type="stmt"/>
+      <line num="12" count="42" type="stmt"/>
+      <line num="13" count="42" type="stmt"/>
+      <line num="14" count="14" type="stmt"/>
+      <line num="15" count="14" type="stmt"/>
+      <line num="17" count="42" type="stmt"/>
+      <line num="19" count="5" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

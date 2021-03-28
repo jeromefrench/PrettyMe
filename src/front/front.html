@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Test PretyMe</title>
+  </head>
+  <body>
+    <form onsubmit="handleForm(event)">
+      <label for="arabicNumber">Number to convert:</label><br>
+      <input type="number" value="" name="arabicNumber" id="arabicNumber" min="0" max="100" required/>
+      <br><br>
+      <button id="convertButton" type="submit">Convert Number</button>
+    </form>
+    <p>
+      Last result : <span id="lastResult">waiting for data</span>
+    </p>
+
+    <script>
+      function handleForm(event) {
+        event.preventDefault();
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById('lastResult').textContent = this.responseText;
+          }
+        };
+        xhttp.open("POST", "http://localhost:3000/convert", true);
+        xhttp.setRequestHeader("Content-Type", "application/json");
+        var numberToConvert = document.getElementById('arabicNumber').value;
+        var data = {numberToConvert: numberToConvert};
+        xhttp.send(JSON.stringify(data));
+      }
+    </script>
+  </body>
+</html>
