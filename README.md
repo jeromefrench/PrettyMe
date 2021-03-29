@@ -3,8 +3,8 @@
 
 Purpose: convert arab number to roman number
 
-git checkout feature/ajax
-git checkout feature/SSE
+### git checkout feature/ajax
+### git checkout feature/SSE
 
 app listening at http://localhost:3000
 
